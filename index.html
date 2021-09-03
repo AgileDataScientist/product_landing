@@ -14,11 +14,14 @@
               width: 300px;
           }
     }
-    #flexbox {
-      display: flexbox;
+    #link-3 {
+      display: flex;
       flex-direction: row;
     }
-    </style>
+    #link-3 > div {
+      border: solid 2px black;
+    }
+  </style>
   </head>
   <body>
     <header id="header">
@@ -30,7 +33,7 @@
         <a href="#link-3" class="nav-link w3-bar-item w3-button">Link 3</a>
       </nav>
     </header>
-    <div id="flexbox">
+
     <section id="home">
       <header>Home<header>
       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Q8Prd9kaulk"
@@ -40,9 +43,14 @@
     <section id="link-1"> Section For Link 1 </section>
     <section id="link-2"> Section For Link 2 </section>
     <section id="link-3">
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
+      <div> </div>
       Section For Link 3
     </section>
-    </div>
+
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <label for="email">Enter your email:</label>
       <input id="email" type="email" id="email" name="email" placeholder="emailaddress@ispprovider.com">
