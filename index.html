@@ -9,27 +9,6 @@
       border: solid 5px red;
       height: 600px;
     }
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
-    @media only screen and (max-width: 768px) {
-      /* For mobile phones: */
-      [class*="col-"] {
-        width: 100%;
-      }
-    }
-
     #link-3 {
       display: flex;
       flex-direction: row;
@@ -38,10 +17,17 @@
       border: solid 2px black;
       height: 60%;
     }
+
+    @media only screen and (max-width: 480px) {
+      body {
+      width: 45%;
+      }
+    }
+
   </style>
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="col-1">
       <img id="header-img" src="" alt="Header Image Placeholder" />
       <nav id="nav-bar" class="w3-bar w3-black">
         <a href="#home"   class="nav-link w3-bar-item w3-button">Home</a>
@@ -51,15 +37,15 @@
       </nav>
     </header>
 
-    <section id="home">
+    <section id="home" class="col-2">
       <header>Home<header>
       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Q8Prd9kaulk"
          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </section>
-    <section id="link-1"> Section For Link 1 </section>
-    <section id="link-2"> Section For Link 2 </section>
-    <section id="link-3">
+    <section id="link-1" class="col-3"> Section For Link 1 </section>
+    <section id="link-2" class="col-4"> Section For Link 2 </section>
+    <section id="link-3" class="col-5">
       <div> </div>
       <div> </div>
       <div> </div>
