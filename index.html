@@ -10,7 +10,11 @@
       height: 600px;
     }
     @media (min-width:567) {
-      
+
+    }
+    #flexbox {
+      display: flexbox;
+      flex-direction: row;
     }
     </style>
   </head>
@@ -24,7 +28,7 @@
         <a href="#link-3" class="nav-link w3-bar-item w3-button">Link 3</a>
       </nav>
     </header>
-
+    <div id="flexbox">
     <section id="home">
       <header>Home<header>
       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Q8Prd9kaulk"
@@ -36,6 +40,7 @@
     <section id="link-3">
       Section For Link 3
     </section>
+    </div>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <label for="email">Enter your email:</label>
       <input id="email" type="email" id="email" name="email" placeholder="emailaddress@ispprovider.com">
