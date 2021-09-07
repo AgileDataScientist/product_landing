@@ -5,26 +5,60 @@
     <style>
         * {
           font-family: sans-serif;
+          background-color: #adebeb;
         }
-        #header {
-          position:fixed;
-          height: 1.2rem;
+        section {
+          padding-bottom:100px;
         }
-        #header > img {
-          width: 20%;
-        }
-        #link1 {
-          padding-top: 50px;
-          margin: 200px;
+        header {
+          display:flex;
+          justify-content: space-around;
         }
         .nav-link {
           padding:20px;
           margin:20px;
         }
-        section {
-          padding-bottom:100px;
+        .flex-container {
+          display:flex;
+          justify-content: center;
+          background-color:  #145252;
+        }
+        .flex-container > div {
+          background-color: #2eb8b8;
+          background-color:  #145252;
+          color: white;
+          width: 200px;
+          margin: 200px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 14px;
         }
 
+        #header {
+          position:fixed;
+          /*height: 1.2rem;*/
+          display: block;
+          width: 100%;
+          background-color:#33cccc;
+        }
+        #header > img {
+          display:block;
+          width:200px;
+          background-color:#33cccc;
+
+        }
+        #nav-bar {
+          background-color:#33cccc;
+        }
+        #nav-bar > a {
+          /*width:200px;*/
+          background-color:#33cccc;
+          padding: 0px;
+
+        }
+        #link-1 {
+          padding-top:250px;
+        }
         /* For desktop: */
         .col-1 {width: 8.33%;}
         .col-2 {width: 16.66%;}
@@ -45,44 +79,49 @@
             width: 100%;
           }
         }
-        #link-3 {
-          display:flex;
-          justify-content: center;
-        }
+
     </style>
   </head>
   <body>
-
-    <header id="header" class="col">
+      <header id="header">
         <img id="header-img" src="https://images.freecreatives.com/wp-content/uploads/2015/04/logo007.png" alt="header image placeholder" />
+        <center>
         <nav id="nav-bar" class="w3-bar w3-black">
             <a href="#link-1" class="nav-link w3-bar-item w3-button"> Link 1 </a>
             <a href="#link-2" class="nav-link w3-bar-item w3-button"> Link 2 </a>
             <a href="#link-3" class="nav-link w3-bar-item w3-button"> Link 3 </a>
         </nav>
-    </header>
+      </center>
+      </header>
 
-    <section id="link-1" class="col"> Section For Link 1
+    <section id="link-1">
       <center>
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Q8Prd9kaulk"
-                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1> Oreo Cookie Blues </h1>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cs6Mpq_iufA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </center>
     </section>
 
-    <!-- Begin Section 2 -->
-    <section id="link-2" class="col">
-      <div> 1 </div>
-      <div> 2 </div>
-      <div> 3 </div>
-    </section>
-
-    <section id="link-3" class="col">
+    <section id="link-2">
+      <center>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <label for="email">Enter your email:</label>
+        <h2> Join Blooz Guitar Gurl's Mailing List </h2>
+        <!--<label for="email"></label>-->
         <input id="email" type="email" id="email" name="email" placeholder="emailaddress@ispprovider.com">
         <input id="submit" type="submit" value="submit">
       </form>
+    </center>
     </section>
+
+    <!-- Begin Section 3 -->
+    <section id="link-3">
+      <div class="flex-container">
+        <div> Buy on Apple Music </div>
+        <div> Buy on Amazon Music </div>
+        <div> Buy on Best Buy </div>
+      </div>
+    </section>
+
+  <!--  begin JavaScript -->
   <script type+"text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
   </body>
 </html>
