@@ -9,6 +9,9 @@ body {
   position:fixed;
   height: 1.2rem;
 }
+#header-img {
+  height:50%;
+}
 .nav-link {
   padding:20px;
   margin:20px;
