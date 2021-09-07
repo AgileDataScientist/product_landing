@@ -21,11 +21,7 @@ header {
   display:flex;
   flex-direction:row;
 }
-#link-3 > div {
-  border: solid 2px black;
-  height: 60%;
-}
-#container-header > img {
+#container-header > img, #container-header > nav {
   width: 20%;
 }
 @media only screen and (max-width: 480px) {
