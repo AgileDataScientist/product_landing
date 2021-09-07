@@ -12,9 +12,9 @@ header {
 }
 #link-1, #link-2, #link-3, #link-4 {
   border: solid 5px red;
-  height: 600px;
+  height: 60px;
 }
-#link-3 {
+#container-header {
   display: flex;
   flex-direction: row;
 }
