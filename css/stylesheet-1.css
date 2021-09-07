@@ -15,7 +15,7 @@ header {
 }
 #link-1, #link-2, #link-3, #link-4 {
   border: solid 5px red;
-  height: 60px;
+  height: 25%;
 }
 #container-header {
   display:flex;
@@ -25,7 +25,7 @@ header {
   border: solid 2px black;
   height: 60%;
 }
-#header-img {
+#container-header > img {
   width: 20%;
 }
 @media only screen and (max-width: 480px) {
