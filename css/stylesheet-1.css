@@ -6,15 +6,6 @@
   position:fixed;
   height: 1.2rem;
 }
-#container-header > img {
-  width: 10%;
-  padding-right: 50px;
-  margin: 20px;
-}
-.nav-link {
-  padding:20px;
-  margin:20px;
-}
 #container-header {
   display:flex;
 }
@@ -37,8 +28,3 @@
   [class*="col-"] {
     width: 100%;
   }
-
-#link-1, #link-2, #link-3, #link-4 {
-  border: solid 5px red;
-  height: 50%;
-}
