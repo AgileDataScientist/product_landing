@@ -2,15 +2,12 @@
 * {
   font-family: sans-serif;
 }
-body {
-  border: solid black 1px;
-}
 #header {
   position:fixed;
   height: 1.2rem;
 }
-#header-img {
-  height:50%;
+#container-header > img {
+  width: 10%;
 }
 .nav-link {
   padding:20px;
